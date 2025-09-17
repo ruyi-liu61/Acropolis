@@ -32,7 +32,7 @@ echo:     Enter a menu option on the keyboard [3,4,5,6,0] :
 choice /C:1234560 /N
 set "userChoice=%errorlevel%"
 
-if %userChoice%==1 goto MainMenu
+if %userChoice%==1 goto DownloadInstall
 if %userChoice%==2 goto MainMenu
 if %userChoice%==3 goto ExtraSubmenu
 if %userChoice%==4 goto RestoreDefaultsSubmenu
